@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,80 @@
     <link rel="stylesheet" href="../Bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <script src="../Bootstrap/node_modules/bootstrap5/src/js/bootstrap.bundle.min.js" defer></script>
 </head>
+
 <body>
-    <h1 class="text-center text-light">Hello! World.</h1>
+    <div class="container my-3">
+
+        <h1 class="display-1">Endereço</h1>
+        <hr>
+        <form method="post" class="needs-validation" novalidate>
+            <div class="container row">
+                <div class="col-6">
+                    <label class="form-label" for="logadouro">Logadouro</label>
+                    <input class="form-control" type="text" id="logadouro" required>
+                    <div class="invalid-feedback">
+                        Formatação um inválida.
+                    </div>
+                    <div class="valid-feedback">
+                        Formatação válida!
+                    </div>
+                </div>
+                <div class="col-3">
+                    <label class="form-label" for="numero">Número</label>
+                    <input class="form-control" type="text" id="numero">
+                </div>
+                <div class="col-3">
+                    <label class="form-label" for="Complemento">Complemento</label>
+                    <input class="form-control" type="text" id="Complemento">
+                </div>
+                <div class="col-6">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input class="form-control" type="text" id="bairro">
+                </div>
+                <div class="col-6">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input class="form-control" type="text" id="cidade">
+                </div>
+                <div class="col-6">
+                    <label for="estado" class="form-label">Estado</label>
+                    <input class="form-control" type="text" id="estado">
+                </div>
+                <div class="col-4">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input class="form-control" type="text" id="cep" pattern="[0-9]{8}" required>
+                    <div class="invalid-feedback">
+                        Min: 8 dígitos.
+                    </div>
+                    <div class="valid-feedback">
+                        Você escreveu uma senha válida!
+                    </div>
+                </div>
+                <div class="my-3">
+                    <input class="form-check-input" type="checkbox" id="termos">
+                    <label class="form-check-label" for="termos">Aceite nossos termos e condições.</label>
+                </div>
+                <button class="col-3 btn bg-primary mt-2 ms-3" type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
 </body>
+<script>
+    (() => {
+        'use strict'
+
+        const forms = document.querySelectorAll('.needs-validation')
+
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
 </html>
