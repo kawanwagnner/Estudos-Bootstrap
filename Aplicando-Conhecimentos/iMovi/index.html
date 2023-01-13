@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste bootstrap</title>
-    <link rel="stylesheet" href="../Bootstrap/node_modules/bootstrap5/src/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <script src="../Bootstrap/node_modules/bootstrap5/src/js/bootstrap.bundle.min.js" defer></script>
-</head>
-<!-- BACKUP -->
-<body>
-    <!DOCTYPE html>
-<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -47,8 +34,9 @@
 
     <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand fs-3 fw-semibold pb-4" href="#"><img class="w-100 ms-5" src="images/imovi-icon.png"
-            alt="..."> iMovi</a>
+        <a class="navbar-brand fs-3 fw-semibold pb-4" href="#">
+          <img class="w-100 ms-5" src="images/imovi-icon.png" alt="..."> iMovi
+        </a>
         <button class="navbar-toggler" type="button" data-bs-bs-toggle="collapse" data-bs-bs-target="#navbar-items"
           aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -151,7 +139,7 @@
     <!-- DESTAQUES -->
     <div class="container" id="featured-container">
       <div class="col-12">
-        <h2 class="title color-white">Trablahoos em destaque</h2>
+        <h2 class="title color-white">Trabalhos em destaque</h2>
         <p class="subtitle color-grey">Conheça nossos projetos mais desafiadores</p>
       </div>
       <div class="col-12" id="featured-images">
@@ -210,18 +198,73 @@
       </div>
       <div class="col-12">
         <div class="row">
-          <div class="col-12 col-md-5">
+          <div class="col-12 col-md-5" id="info-banner">
             <img src="images/infobanner.jpg" alt="Informações da Empresa" class="img-fluid">
           </div>
-          .col-12.
+          <div class="col-12 col-md-7 bg-sub-white" id="info-content">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title color-white">Esses dados fazem a diferença</h2>
+                <p class="subtitle color-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt odit
+                  quos modi in atque, cum, quam natus a iure eveniet accusamus at autem delectus animi! Omnis labore
+                  alias error modi!</p>
+              </div>
+              <div class="col-12" id="info-numbers">
+                <div class="row">
+                  <div class="col-4">
+                    <h3 class="color-white">18</h3>
+                    <p class="color-grey">Anos na construção civil</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="color-white">95</h3>
+                    <p class="color-grey">Projetos executados</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="color-white">639</h3>
+                    <p class="color-grey">Clientes</p>
+                  </div>
+                  <div class="col-12">
+                    <a href="#" class="btn btn-dark">Saber Mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- FOOTER -->
+    <div class="container-fluid bg-black" id="footer">
+      <div class="container">
+        <div class="row">
+          <!-- FOOTER TOP -->
+          <div class="col-12" id="footer-top">
+            <div class="row justify-content-between">
+              <div class="col-4">
+                <h1>iMovi</h1>
+              </div>
+              <div class="col-4" id="social-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter"></i>
+              </div>
+          </div>
+          </div>
+        </div>
+        <!-- FOOTER DETAILS -->
+        <div class="col-12" id="footer-details">
+          <div class="row">
+            <div class="col-12 col-md-4" id="newscontainer"></div>
+          </div>
+        </div>
+        <!-- FOOTER BOOTTOM -->
+        <div class="col-12" id="footer-boottom"></div>
+      </div>
+    </div>
   </main>
 
 </body>
 
-</html>
-</body>
 </html>
