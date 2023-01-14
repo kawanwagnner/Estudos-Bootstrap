@@ -37,7 +37,7 @@
         <a class="navbar-brand fs-3 fw-semibold pb-4" href="#">
           <img class="w-100 ms-5" src="images/imovi-icon.png" alt="..."> iMovi
         </a>
-        <button class="navbar-toggler" type="button" data-bs-bs-toggle="collapse" data-bs-bs-target="#navbar-items"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
           aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -235,14 +235,16 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="container-fluid bg-black" id="footer">
+    <footer class="container-fluid bg-black" id="footer">
       <div class="container">
         <div class="row">
           <!-- FOOTER TOP -->
           <div class="col-12" id="footer-top">
             <div class="row justify-content-between">
               <div class="col-4">
-                <h1>iMovi</h1>
+                <h2>
+                  iMovi
+                </h2>
               </div>
               <div class="col-4" id="social-icons">
                 <i class="bi bi-facebook"></i>
@@ -250,21 +252,68 @@
                 <i class="bi bi-youtube"></i>
                 <i class="bi bi-twitter"></i>
               </div>
+            </div>
           </div>
+          <!-- FOOTER DETAILS -->
+          <div class="col-12" id="footer-details">
+            <div class="row">
+              <div class="col-12 col-md-4" id="news-container">
+                <h4>Fique por dentro das novidades</h4>
+                <p class="color-grey">
+                  Inscreva-se para saber em primeira mão
+                </p>
+                <form>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Digite o seu e-mail" />
+                  </div>
+                  <button class="btn btn-dark">Inscrever</button>
+                </form>
+              </div>
+              <div class="col-12 col-md-4" id="contact-container">
+                <h4>Formas de contato</h4>
+                <p class="color-grey">(81)9999-9999</p>
+                <p class="color-grey">contato@imovi.com</p>
+              </div>
+              <div class="col-12 col-md-4" id="links-container">
+                <div class="row">
+                  <h4>Você pode estar buscando por:</h4>
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="color-grey">Projetos</a></li>
+                      <li><a href="#" class="color-grey">Imóveis</a></li>
+                      <li><a href="#" class="color-grey">Vendas</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="color-grey">Contratar</a></li>
+                      <li>
+                        <a href="#" class="color-grey">Trabalhe conosco</a>
+                      </li>
+                      <li><a href="#" class="color-grey">Contato</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FOOTER BOTTOM -->
+          <div class="col-12" id="footer-bottom">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-3">
+                <p class="color-grey">iMovi &copy; 2023</p>
+              </div>
+              <div class="col-12 col-md-3">
+                <p class="color-grey">
+                  Realizamos o seu projeto com
+                  <i class="bi bi-heart"></i>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- FOOTER DETAILS -->
-        <div class="col-12" id="footer-details">
-          <div class="row">
-            <div class="col-12 col-md-4" id="newscontainer"></div>
-          </div>
-        </div>
-        <!-- FOOTER BOOTTOM -->
-        <div class="col-12" id="footer-boottom"></div>
       </div>
-    </div>
-  </main>
-
+    </footer>
 </body>
 
 </html>
